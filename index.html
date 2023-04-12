@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INVO Academy JS Starter with Vite</title>
-</head>
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
 
-<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
-
-<body>
-  <div id="home-page">
-    
-    <div class="card-container">
-      <div class="card-container__image">
-        <img src="public/images/AdobeStock_331830515 1.jpg" alt="women with headphones">
-      </div>
-      <div class="card-container__summary">
-        <div class="card-container__summary__title">
-          <h1 class="heading-1">Order Summary</h1>
-          <p class="text-1">You're close! Confirm your purchase and complete your order in the next step</p>
+  <body>
+    <div class="home-page-container">
+      <div class="card-container">
+        <div class="card-container__image">
+          <img
+            src="public/images/AdobeStock_331830515 1.jpg"
+            alt="women with headphones"
+          />
         </div>
-        <div class="card-container__summary__product">
-          <div class="card-container__summary__product__image">
-            <img src="public/images/music.svg" alt="music note">
-          </div>
-          <div class="card-container__summary__product__text">
-            <h2 class="heading-2">Annual Plan</h2>
-            <span class="text-2">$58.99 / year</span>
-          </div>
-          <div class="card-container__summary__product__btn">
-            <a href="">Change</a>
+        <div class="card-container__summary">
+          <div class="card-container__summary-wrapper">
+            <h1 class="card-container__summary-title">Order Summary</h1>
+            <p class="card-container__summary-desc">
+              You're close! Confirm your purchase and complete your order in the
+              next step
+            </p>
           </div>
         </div>
-
-      </div>
-      <div class="card-container__btn">
-        Proceed to Payment
-      </div>
-      <div class="card-container__cancel">
-        <a>Cancel Order</a>
+        <div class="plan-container">
+          <div class="plan-container__image">
+            <img src="public/images/music.svg" alt="music note" />
+          </div>
+          <div class="plan-container__text">
+            <h2 class="plan-container__text-title">Annual Plan</h2>
+            <span class="plan-container__text-pricing">$58.99 / year</span>
+          </div>
+          <div class="plan-container__change">
+            <a class="plan-container__change-btn" href="#">Change</a>
+          </div>
+        </div>
+        <div class="bnt-container">
+          <div id="submit" class="bnt-container__button">
+            <div class="bnt-container__button-desc">Proceed to Payment</div>
+            <div class="spinner-container"></div>
+          </div>
+          <div class="bnt-container__cancel">
+            <a href="#">Cancel Order</a>
+          </div>
+        </div>
       </div>
     </div>
-    
-  </div>
-
-  <script type="module" src="/src/global-scripts/main.js"></script>
-  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
-</body>
-
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script
+      type="module"
+      src="/src/pages/home-page/scripts/home-page.js"
+    ></script>
+  </body>
 </html>
